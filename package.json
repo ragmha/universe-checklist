@@ -1,0 +1,42 @@
+{
+  "name": "universe-checklist",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.0",
+  "scripts": {
+    "dev": "bun --bun vite --host 127.0.0.1 --port 4177 --strictPort",
+    "build": "bun run typecheck && bun --bun vite build",
+    "preview": "bun --bun vite preview --host 127.0.0.1 --port 4177 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/app.test.mjs",
+    "check": "bun run test && bun run build"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "dependencies": {
+    "@fontsource-variable/mona-sans": "5.3.0",
+    "@radix-ui/react-checkbox": "1.3.12",
+    "@radix-ui/react-select": "2.3.8",
+    "@radix-ui/react-slot": "^1.3.3",
+    "@radix-ui/react-tabs": "^1.1.21",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "1.42.0",
+    "radix-ui": "^1.8.0-rc.1791509415276",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwind-merge": "^3.6.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4",
+    "@types/node": "22.20.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "5.2.0",
+    "tailwindcss": "4",
+    "typescript": "5.9.3",
+    "vite": "7.3.6"
+  }
+}
